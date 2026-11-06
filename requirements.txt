@@ -1,0 +1,10 @@
+beir
+pytrec_eval
+numpy
+pandas
+rank-bm25
+nltk
+matplotlib
+sentence-transformers
+torch
+streamlit
