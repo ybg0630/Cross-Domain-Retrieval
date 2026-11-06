@@ -1,0 +1,2 @@
+sentence-transformers>=5.1,<6
+matplotlib>=3.8,<4
