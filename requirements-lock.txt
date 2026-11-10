@@ -1,0 +1,2 @@
+# Compatibility alias for the verified Member 4 runtime.
+-r requirements-member4-lock.txt
