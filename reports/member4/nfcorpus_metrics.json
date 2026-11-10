@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "nDCG@10": 0.3255610480535722,
+    "Recall@100": 0.31270000181740326
+  },
+  "reranked": {
+    "nDCG@10": 0.34531944001706405,
+    "Recall@100": 0.31270000181740326
+  },
+  "counts": {
+    "improved": 118,
+    "worsened": 85,
+    "unchanged": 120
+  },
+  "fractions": {
+    "improved": 0.3653250773993808,
+    "worsened": 0.2631578947368421,
+    "unchanged": 0.3715170278637771
+  },
+  "dataset": "nfcorpus",
+  "split": "test",
+  "query_count": 323,
+  "smoke_only": false
+}

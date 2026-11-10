@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+datasets/
+cache/
+demo_output/
+member4_smoke/
+member4_gpu_preflight/
+member4_checks/
+.mplconfig/
+.DS_Store

@@ -1,0 +1,70 @@
+{
+  "dataset": "nfcorpus",
+  "config": {
+    "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "max_length": 512,
+    "text_format": "title + space + text",
+    "activation": "identity"
+  },
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "requested_device": "cuda",
+    "device": "cuda:0",
+    "torch": "2.14.1+cu126",
+    "threads": 4,
+    "packages": {
+      "sentence-transformers": "5.7.0",
+      "transformers": "5.22.1",
+      "numpy": "2.4.6"
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+  },
+  "query_count": 324,
+  "inferred_pairs": 32400,
+  "inference_ms": 82038.06029996485,
+  "ms_per_inferred_pair": 2.5320388981470634,
+  "full_fresh_pass": true,
+  "mean_full_rerank_ms": 253.20388981470634,
+  "timing_scope": "tokenization + model prediction + CPU scores; excludes load/warmup/cache/IO",
+  "batch_size": 32,
+  "split": "dev",
+  "smoke_only": false,
+  "full_split_queries": 324,
+  "sources": {
+    "member3\\results\\dev\\nfcorpus_bm25.json": "d8c450088e637ef9a3f132fa748968d005cdebd59223f3057f2a70f540928acf",
+    "member3\\results\\dev\\nfcorpus_dense_minilm.json": "f0cb3211cdd0f560431d0e871b739764a6044153acb729d3c9fb9ee1e74d91be"
+  },
+  "fusion": {
+    "method": "wsum",
+    "dense_model": "minilm",
+    "top_k": 100,
+    "selection_metric": "macro average train/dev nDCG@10",
+    "selection_scores": {
+      "RRF": 0.4250803621911137,
+      "Weighted sum": 0.4739051109614933
+    },
+    "datasets": {
+      "scifact": {
+        "selection_split": "train",
+        "alpha": 0.6,
+        "test_candidates": "member3/results/scifact_hybrid_wsum.json"
+      },
+      "nfcorpus": {
+        "selection_split": "dev",
+        "alpha": 0.5,
+        "test_candidates": "member3/results/nfcorpus_hybrid_wsum.json"
+      },
+      "fiqa": {
+        "selection_split": "dev",
+        "alpha": 0.7,
+        "test_candidates": "member3/results/fiqa_hybrid_wsum.json"
+      }
+    }
+  },
+  "fusion_config_sha256": "ab4f3eb3acb34e803139f9973a603ed71a8678b470f945546f9a1139f9a9b69a",
+  "timestamp_utc": "20261110T111856_790451Z",
+  "timer": "src.utils.Timer",
+  "evaluator": "src.utils.evaluate"
+}

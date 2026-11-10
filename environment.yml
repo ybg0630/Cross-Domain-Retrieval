@@ -1,0 +1,12 @@
+name: ee6405-member4
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - sentence-transformers>=5.1,<6
+      - matplotlib>=3.8,<4
+      - beir>=2.2,<3
+      - pytrec-eval-terrier>=0.5.6,<0.6
+      - requests>=2.31,<3

@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-10",
+  "local_branch": "s4-integration",
+  "upstream_commits": {
+    "origin/main": "2e85ba6a774d4a591a21841f6e73b0f51bd2f672",
+    "origin/member2/dense-retrieval": "1fc4500762bba091a9784ebb5fd1d62161a4d446",
+    "origin/member3/hybrid-retrieval": "ea585ff19845722b0c0ef9c0da20f951f5cd232f",
+    "origin/s4": "c427dbc77686ea54795d45b7f1291ce19390b9e5"
+  },
+  "unit_tests_passed": 18,
+  "input_queries_checked": 2904,
+  "input_pairs_checked": 290400,
+  "six_upstream_baseline_reports_match": true,
+  "real_model_smoke_queries": 18,
+  "real_model_smoke_pairs": 1800,
+  "cache_replay_new_inferences": 0,
+  "historical_timing_preserved": true,
+  "full_rerank_completed": true,
+  "device_tested": "Windows CPU smoke; NVIDIA GeForce RTX 3070 Ti Laptop GPU full experiment",
+  "mac_tested": false,
+  "full_rerank_queries": 2904,
+  "full_rerank_pairs": 290400,
+  "full_experiment_directory": "L:\\ntu_class\\6405\\project\\member4_full_20261110"
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "dataset": "scifact",
+    "split": "test",
+    "corpus_size": 5183,
+    "queries": 300,
+    "pairs": 30000,
+    "baseline_metrics": {
+      "nDCG@10": 0.6815138962076251,
+      "Recall@100": 0.93
+    },
+    "sources": {
+      "member3\\results\\scifact_hybrid_wsum.json": "4f9fb1fe9576858f87edc697f245e00a4e1d5ff34872582cfda4331f4add086c"
+    }
+  },
+  {
+    "dataset": "scifact",
+    "split": "train",
+    "corpus_size": 5183,
+    "queries": 809,
+    "pairs": 80900,
+    "baseline_metrics": {
+      "nDCG@10": 0.7031572183484224,
+      "Recall@100": 0.9367531932426864
+    },
+    "sources": {
+      "member3\\results\\train\\scifact_bm25.json": "ecbad41f03aa48976c7b912e61a53396ae7239f0157bf7cbc0b1e5d19a787659",
+      "member3\\results\\train\\scifact_dense_minilm.json": "7b3ae0c71e4fbbb7c5ef093c89a675ca7348dd09e0277437c7fab6388d17e6cd"
+    }
+  },
+  {
+    "dataset": "nfcorpus",
+    "split": "test",
+    "corpus_size": 3633,
+    "queries": 323,
+    "pairs": 32300,
+    "baseline_metrics": {
+      "nDCG@10": 0.3255610480535722,
+      "Recall@100": 0.31270000181740326
+    },
+    "sources": {
+      "member3\\results\\nfcorpus_hybrid_wsum.json": "e660fdacae002343bf01298cd3709558c88529d293320a310201e3a9f55fdde0"
+    }
+  },
+  {
+    "dataset": "nfcorpus",
+    "split": "dev",
+    "corpus_size": 3633,
+    "queries": 324,
+    "pairs": 32400,
+    "baseline_metrics": {
+      "nDCG@10": 0.3173056302879285,
+      "Recall@100": 0.2963106588595905
+    },
+    "sources": {
+      "member3\\results\\dev\\nfcorpus_bm25.json": "d8c450088e637ef9a3f132fa748968d005cdebd59223f3057f2a70f540928acf",
+      "member3\\results\\dev\\nfcorpus_dense_minilm.json": "f0cb3211cdd0f560431d0e871b739764a6044153acb729d3c9fb9ee1e74d91be"
+    }
+  },
+  {
+    "dataset": "fiqa",
+    "split": "test",
+    "corpus_size": 57638,
+    "queries": 648,
+    "pairs": 64800,
+    "baseline_metrics": {
+      "nDCG@10": 0.3820174576166849,
+      "Recall@100": 0.6938056799167912
+    },
+    "sources": {
+      "member3\\results\\fiqa_hybrid_wsum.json": "b0c0200c196a650c06518eae4690cfcba5cbec1d6f10f295e66e061edbf3aeb4"
+    }
+  },
+  {
+    "dataset": "fiqa",
+    "split": "dev",
+    "corpus_size": 57638,
+    "queries": 500,
+    "pairs": 50000,
+    "baseline_metrics": {
+      "nDCG@10": 0.4012524842481292,
+      "Recall@100": 0.7104198468198469
+    },
+    "sources": {
+      "member3\\results\\dev\\fiqa_bm25.json": "0bd573e5c35ffd1fb7f8baf4ff3ce7dc1867b0aa2c3262dc125efc08224946a0",
+      "member3\\results\\dev\\fiqa_dense_minilm.json": "6b455175db19905165682e40844180e38919b3352fb039a94c6efa4981abfcd7"
+    }
+  }
+]

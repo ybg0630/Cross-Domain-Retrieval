@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "query_sets_and_100_candidates": "passed",
+  "json_sqlite_scores_equal": "passed",
+  "all_scores_finite": "passed",
+  "all_pairs_inferred_no_cache_hits": "passed",
+  "all_timing_rows_positive_and_totals_match": "passed",
+  "overall_and_per_query_metrics_recomputed_with_s1_utils": "passed",
+  "recall_unchanged_all_splits": "passed",
+  "upstream_file_hashes": "passed",
+  "test_calibration_query_ids_disjoint": "passed",
+  "unit_tests_passed": 18
+}

@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "nDCG@10": 0.7031572183484224,
+    "Recall@100": 0.9367531932426864
+  },
+  "reranked": {
+    "nDCG@10": 0.7110178278153426,
+    "Recall@100": 0.9367531932426864
+  },
+  "counts": {
+    "improved": 165,
+    "worsened": 129,
+    "unchanged": 515
+  },
+  "fractions": {
+    "improved": 0.20395550061804696,
+    "worsened": 0.15945611866501855,
+    "unchanged": 0.6365883807169345
+  },
+  "dataset": "scifact",
+  "split": "train",
+  "query_count": 809,
+  "smoke_only": false
+}

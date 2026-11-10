@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "nDCG@10": 0.4012524842481292,
+    "Recall@100": 0.7104198468198469
+  },
+  "reranked": {
+    "nDCG@10": 0.38362168072579356,
+    "Recall@100": 0.7104198468198469
+  },
+  "counts": {
+    "improved": 126,
+    "worsened": 150,
+    "unchanged": 224
+  },
+  "fractions": {
+    "improved": 0.252,
+    "worsened": 0.3,
+    "unchanged": 0.448
+  },
+  "dataset": "fiqa",
+  "split": "dev",
+  "query_count": 500,
+  "smoke_only": false
+}

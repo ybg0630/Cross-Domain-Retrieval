@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "nDCG@10": 0.6815138962076251,
+    "Recall@100": 0.93
+  },
+  "reranked": {
+    "nDCG@10": 0.6875731295682027,
+    "Recall@100": 0.93
+  },
+  "counts": {
+    "improved": 60,
+    "worsened": 52,
+    "unchanged": 188
+  },
+  "fractions": {
+    "improved": 0.2,
+    "worsened": 0.17333333333333334,
+    "unchanged": 0.6266666666666667
+  },
+  "dataset": "scifact",
+  "split": "test",
+  "query_count": 300,
+  "smoke_only": false
+}
