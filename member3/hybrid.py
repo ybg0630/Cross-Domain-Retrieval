@@ -4,8 +4,6 @@ import csv
 import json
 from pathlib import Path
 
-from src import utils
-
 
 def rrf(bm25_scores, dense_scores, k=60, top_k=100):
     """Return the highest-scoring documents for one query."""
@@ -51,6 +49,8 @@ def validate_queries(bm25, dense, qrels):
 
 
 def tune_weight(dataset, model, results_dir):
+    from src import utils
+
     split = "train" if dataset == "scifact" else "dev"
     tune_dir = results_dir / split
     bm25 = load_run(tune_dir, f"{dataset}_bm25.json")
@@ -78,6 +78,8 @@ def tune_weight(dataset, model, results_dir):
 
 
 def main():
+    from src import utils
+
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", required=True, choices=["scifact", "nfcorpus", "fiqa"])
     parser.add_argument("--model", required=True, choices=["minilm", "bge"])
