@@ -1,2 +1,0 @@
-matplotlib
-pytrec-eval-terrier
